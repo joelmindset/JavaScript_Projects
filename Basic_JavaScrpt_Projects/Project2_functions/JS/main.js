@@ -6,9 +6,7 @@ function Adder() { // define fuction and name it
 }
 
 function clicker() {
-    var set = "by clicking";
-    set += " also this to come"
+    var set = "by clicking"; // adding string
+    set += " also this to come" // adding another string
     document.getElementById("clicker1").innerHTML = set;
 }
-
-document.getElementById("p1").innertext = "New text!";
