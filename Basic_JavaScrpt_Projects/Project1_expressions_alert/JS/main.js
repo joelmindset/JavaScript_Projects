@@ -9,11 +9,11 @@ var B2 = " part 1" + " part 2. ";
 document.write(B2)
     // making a family
 var Numbers = "Alpha",
-    A = "1", //not a int
+    A = "1", //string
     B = "2",
     C = "3",
     D = "4",
-    E = 5; //add int
+    E = 5; //add number
 F = 6;
 
 document.write(E + F); // does math
