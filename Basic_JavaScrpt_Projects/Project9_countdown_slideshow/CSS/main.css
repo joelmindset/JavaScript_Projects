@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* Body style */
+
+body {
+    background-color: coral;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.slider {
+    display: none;
+}
+
+
+/* 2 Image position */
+
+.restyleImg {
+    float: left;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: rgba(3, 5, 3, 0.9);
+}
+
+.borderImg1 {
+    border-radius: 15px 0px 0px 15px;
+    border-right: none;
+}
+
+.borderImg2 {
+    border-radius: 0px 15px 15px 0px;
+    border-left: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -10px;
+    padding: 16px;
+    color: rgb(89, 144, 246);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/*"next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(61, 233, 55, 0.8);
+}
+
+
+/* Caption Text Style */
+
+.text {
+    color: #9f00cf;
+    font-size: 55px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    top: 12px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px rgba(255, 0, 0, .6);
+}
+
+
+/* slide text */
+
+.slideNum {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: rgb(89, 144, 246, .9);
+    border-radius: 20%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: rgb(61, 233, 55);
+}
+
+
+/* Fading and slide animation */
+
+.fadeSlide {
+    -webkit-animation-name: fadeSlide;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeSlide;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeSlide {
+    from {
+        opacity: .2;
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: .4;
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
