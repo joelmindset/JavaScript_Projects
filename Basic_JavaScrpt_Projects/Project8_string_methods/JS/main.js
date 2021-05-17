@@ -1,10 +1,12 @@
 //Search  / Uppercase / Slice
 function partMyString() {
-    var amandaString = "First Second";
+    var amandaString = " First Second";
+    var tedstring = " String"
+    var ted = amandaString.concat(tedstring)
     var getable = amandaString.search('Second');
     var amandaString = amandaString.toUpperCase();
-    var second = amandaString.slice(6, 12);
-    document.getElementById("myString").innerHTML = getable + ' ' + second;
+    var second = amandaString.slice(7, 13);
+    document.getElementById("myString").innerHTML = getable + ' ' + second + ted;
 }
 //num to string
 function numString() {
