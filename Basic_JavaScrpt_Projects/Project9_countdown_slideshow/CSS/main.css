@@ -13,7 +13,7 @@ body {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -54,15 +54,13 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
     width: auto;
-    margin-top: -10px;
-    padding: 16px;
-    color: rgb(89, 144, 246);
+    padding: 20px;
+    color: rgb(20, 43, 255);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 25px 25px 25px 25px;
     user-select: none;
 }
 
@@ -71,7 +69,6 @@ body {
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 
@@ -103,9 +100,9 @@ body {
 .slideNum {
     color: #f2f2f2;
     font-size: 16px;
-    padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: 355px;
+    left: 100px;
 }
 
 
