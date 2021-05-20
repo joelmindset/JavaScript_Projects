@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic AJAX Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Get The Latest Content:</h2>
+        <div class='content' id="content">
+            <input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();" />
+        </div>
+        <div id="demo"></div>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        <!--call function-->
+    </div>
+    <script type="text/javascript">
+        //STEP 1: setup the xml http request object
+        var ajax = new XMLHttpRequest();
+
+        //STEP 2: prepare teh open ajax request
+
+        ajax.open('GET', 'content.html');
+
+        //STEP 3: define the ajax response
+
+        ajax.onreadystatechange = function() {
+                if (ajax.readyState = 4) {
+                    document.getElementById('content').innerHTML = ajax.responseText;
+                }
+            }
+            // STEP 4: send the ajax request for data
+        function getContent() {
+            ajax.send();
+            document.getElementById('btn_content').style.display = 'none';
+        }
+        //define and work
+        function loadDoc() { //function
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() { //when state change
+                if (this.readyState == 4 && this.status == 200) { // response ready
+                    document.getElementById("demo").innerHTML = //where
+                        this.responseText; //what
+                }
+            };
+            xhttp.open("GET", "content.html", true); //location
+            xhttp.send(); //Send it back!
+        }
+    </script>
+</body>
+
+</html>
