@@ -1,6 +1,6 @@
 # JavaScript_Projects
 Here I will be learning JavaScript
-<h1>Projects</h1>
+<h3>Projects</h3>
 <hr>
 Pizza Menu - ordering menu'
 <br>
